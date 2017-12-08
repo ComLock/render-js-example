@@ -1,0 +1,36 @@
+plugins {
+  id 'com.enonic.xp.app' version '1.0.13'
+}
+
+
+repositories {
+    mavenLocal()
+    jcenter()
+    xp.enonicRepo()
+}
+
+
+xp {
+  version = xpVersion
+}
+
+
+app {
+    name = project.ext.appName
+    displayName = project.ext.displayName
+    vendorName = 'Enonic AS'
+    vendorUrl = 'http://enonic.com'
+}
+
+
+dependencies {
+  compile "com.enonic.xp:core-api:${xpVersion}"
+  compile "com.enonic.xp:portal-api:${xpVersion}"
+
+  include 'com.enonic.lib:render-js:0.0.4'
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.4'
+}
