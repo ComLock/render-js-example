@@ -1,5 +1,5 @@
 plugins {
-  id 'com.enonic.xp.app' version '1.0.13'
+  id 'com.enonic.xp.app' version '1.0.15'
 }
 
 
@@ -20,6 +20,7 @@ app {
     displayName = project.ext.displayName
     vendorName = 'Enonic AS'
     vendorUrl = 'http://enonic.com'
+    systemVersion = "${xpVersion}"
 }
 
 
@@ -27,7 +28,9 @@ dependencies {
   compile "com.enonic.xp:core-api:${xpVersion}"
   compile "com.enonic.xp:portal-api:${xpVersion}"
 
-  include 'com.enonic.lib:render-js:0.0.4'
+  include "com.enonic.xp:lib-portal:${xpVersion}"
+
+  include 'com.enonic.lib:render-js:1.2.0'
 }
 
 
