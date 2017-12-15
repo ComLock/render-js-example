@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<layout>
+  <display-name>Grid</display-name>
+  <config>
+
+    <field-set name="horizontal">
+      <label>Horizontal</label>
+      <items>
+        <input name="gridTemplateColumns" type="TextLine">
+          <label>grid-template-columns</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>auto</default>
+        </input>
+
+        <input name="gridColumnGap" type="TextLine">
+          <label>grid-column-gap</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>auto</default>
+        </input>
+
+        <input name="justifyContent" type="TextLine">
+          <label>justify-content</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>stretch</default>
+        </input>
+
+        <input name="justifyItems" type="TextLine">
+          <label>justify-items</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>stretch</default>
+        </input>
+      </items>
+    </field-set>
+
+    <field-set name="vertical">
+      <label>Vertical</label>
+      <items>
+        <input name="gridTemplateRows" type="TextLine">
+          <label>grid-template-rows</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>auto</default>
+        </input>
+
+        <input name="gridRowGap" type="TextLine">
+          <label>grid-row-gap</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>auto</default>
+        </input>
+
+        <input name="alignContent" type="TextLine">
+          <label>align-content</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>stretch</default>
+        </input>
+
+        <input name="alignItems" type="TextLine">
+          <label>align-items</label>
+          <occurrences minimum="0" maximum="1"/>
+          <default>stretch</default>
+        </input>
+      </items>
+    </field-set>
+
+  </config>
+  <regions>
+    <region name="1"/>
+    <region name="2"/>
+    <region name="3"/>
+    <region name="4"/>
+    <region name="5"/>
+    <region name="6"/>
+    <region name="7"/>
+    <region name="8"/>
+    <region name="9"/>
+    <region name="10"/>
+    <region name="11"/>
+    <region name="12"/>
+    <!-- Just add more if needed -->
+  </regions>
+</layout>
