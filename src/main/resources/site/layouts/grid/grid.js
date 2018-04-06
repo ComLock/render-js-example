@@ -1,4 +1,4 @@
-var R = require('/lib/render-js/index.js');
+var R = require('/lib/render-js/html.js');
 var P = require('/lib/xp/portal');
 
 

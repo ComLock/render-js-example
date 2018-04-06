@@ -30,7 +30,7 @@ dependencies {
 
   include "com.enonic.xp:lib-portal:${xpVersion}"
 
-  include 'com.enonic.lib:render-js:1.2.0'
+  include 'com.enonic.lib:render-js:1.21.0-B3'
 }
 
 
